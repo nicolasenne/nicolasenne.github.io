@@ -1,0 +1,9 @@
+@forward '../general/container';
+
+body {
+  font-family: 'FSLucasPro';
+}
+
+p {
+  width: clamp(45ch, 50%, 75ch);
+}

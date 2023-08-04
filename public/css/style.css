@@ -380,3 +380,51 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding: 32px;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  mix-blend-mode: difference;
+}
+nav .menu {
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  width: 40px;
+}
+nav .links {
+  display: flex;
+  gap: 20px;
+  font-weight: 700;
+}
+nav .social {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.9em;
+  font-size: 1.2em;
+  padding: 16px;
+}
+
+.container {
+  padding-left: 100px;
+  width: calc(100% - 100px);
+}
+
+body {
+  font-family: "FSLucasPro";
+}
+
+p {
+  width: clamp(45ch, 50%, 75ch);
+}

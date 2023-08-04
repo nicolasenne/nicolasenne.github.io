@@ -1,0 +1,54 @@
+@use '../abstracts/colors' as a;
+
+main {
+  color: a.$white;
+  padding: 15vh 0;
+}
+
+.banner {
+  background-color: a.$black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  height: 75vh;
+  padding: 0 50px;
+  box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
+
+  img {
+    height: 120%;
+    margin-bottom: 15vh;
+  }
+}
+
+.banner-content {
+  width: max(50%, 300px);
+  color: a.$gray;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  h1 {
+    color: a.$white;
+  }
+
+  h1, h2 {
+    font-size: 3.5rem;
+    line-height: 1.0;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  a {
+    color: a.$white;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+}

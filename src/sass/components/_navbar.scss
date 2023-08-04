@@ -1,5 +1,7 @@
+@use '../abstracts/colors' as a;
+
 nav {
-  padding: 32px;
+  padding: 50px 76px 50px 50px;
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -28,6 +30,7 @@ nav {
     gap: 0.9em;
     font-size: 1.2em;
     padding: 16px;
+    color: a.$gray;
   }
 }
 

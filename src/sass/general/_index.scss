@@ -1,9 +1,35 @@
 @forward '../general/container';
+@use '../abstracts/colors' as a;
 
 body {
   font-family: 'FSLucasPro';
+  font-weight: 500;
+  color: a.$gray;
 }
 
-p {
-  width: clamp(45ch, 50%, 75ch);
+h1, h2 {
+  line-height: 1.0;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: a.$black;
+}
+
+h3, p {
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: a.$black;
+}
+
+.bg-black {
+  background-color: a.$black;
+  color: a.$white;
 }

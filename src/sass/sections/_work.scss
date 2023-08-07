@@ -1,0 +1,46 @@
+@use '../abstracts/colors' as a;
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(3, min(20vw, 300px));
+  grid-template-rows: repeat(8, auto);
+  place-items: center;
+  gap: 32px;
+  text-wrap: balance;
+
+  .item1 { grid-area: 1 / 1 / span 4 / span 1; }
+  .item2 { grid-area: 1 / 2 / span 2 / span 1; }
+  .item3 { grid-area: 3 / 2 / span 4 / span 1; }
+  .item4 { grid-area: 4 / 3 / span 2 / span 1; }
+  .item5 { grid-area: 5 / 1 / span 4 / span 1; }
+  .item6 { grid-area: 7 / 2 / span 2 / span 1; }
+
+  img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: ease-in-out .3s;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  h4, a {
+    color: a.$black;
+    font-weight: 700;
+  }
+}
+
+.work-title {
+  margin: 15vh 0 10vh;
+}

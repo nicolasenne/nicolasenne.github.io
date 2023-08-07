@@ -1,0 +1,42 @@
+@use '../abstracts/colors' as a;
+
+.about-bg {
+  background: linear-gradient(#fff 60%, 0, #000 40%);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px 48px;
+  color: a.$black;
+
+  > div {
+    padding: 25px 0;
+    line-height: 1.8;
+  }
+
+  .item1 { grid-area: 1 / 2 / span 1 / span 2; display:flex; gap: 1rem; }
+  .item2 { grid-area: 2 / 1 / span 3 / span 1; display:flex; gap: 1rem; }
+  .item3 { grid-area: 2 / 2 / span 1 / span 2; display:flex; gap: 1rem; }
+  .item4 { grid-area: 3 / 2 / span 1 / span 2; display:flex; gap: 1rem; }
+  .item5 { grid-area: 4 / 2 / span 1 / span 2; display:flex; gap: 1rem; h4, i, p { color: a.$white; } }
+  .item6 { grid-area: 5 / 2 / span 1 / span 2; display:flex; gap: 1rem; }
+
+  .about-img {
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
+  }
+
+  > div > i {
+    font-size: 1.6rem;
+  }
+
+  p {
+    color: a.$gray;
+    width: 75%;
+  }
+
+  .signature {
+    padding-bottom: 25px;
+  }
+}

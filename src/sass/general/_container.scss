@@ -2,3 +2,9 @@
   padding-left: 12vw;
   width: calc(100% - 5%);
 }
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 5%;
+  }
+}

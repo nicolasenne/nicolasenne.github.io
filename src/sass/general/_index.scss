@@ -1,11 +1,16 @@
-@forward '../general/container';
 @use '../abstracts/colors' as a;
+@forward '../general/container';
+
+html {
+  font-size: calc(14px + 0.390625vw);
+}
 
 body {
   font-family: 'FSLucasPro';
   font-weight: 500;
   color: a.$gray;
   mix-blend-mode: difference;
+  text-wrap: balance;
 }
 
 h1, h2 {
@@ -14,20 +19,21 @@ h1, h2 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: a.$black;
 }
 
 h3, p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 a {
   color: a.$black;
+  font-size: .9rem;
 }
 
 .bg-black {

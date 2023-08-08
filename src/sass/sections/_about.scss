@@ -6,12 +6,13 @@
 
 .about {
   display: grid;
+  grid-template-rows: repeat(5, auto);
   grid-template-columns: auto auto;
-  gap: 20px 48px;
+  gap: 2vh 4vw;
   color: a.$black;
 
   > div {
-    padding: 25px 0;
+    padding: 28px 0;
     line-height: 1.8;
   }
 
@@ -25,6 +26,8 @@
   .about-img {
     border-radius: 12px;
     box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
+    // height: 100%;
+    // object-fit: cover;
   }
 
   > div > i {
@@ -38,5 +41,37 @@
 
   .signature {
     padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    > div {
+      padding: 8px;
+    }
+  
+    .item1 { grid-area: 1 / 1 / span 1 / span 1; gap: 0; justify-content: center;}
+    .item2 { grid-area: 4 / 1 / span 1 / span 1; gap: 0; }
+    .item3 { grid-area: 2 / 1 / span 1 / span 1; gap: 0; flex-direction: column; }
+    .item4 { grid-area: 3 / 1 / span 1 / span 1; gap: 0; flex-direction: column; }
+    .item5 { grid-area: 5 / 1 / span 1 / span 1; gap: 0; flex-direction: column; }
+    .item6 { grid-area: 6 / 1 / span 1 / span 1; gap: 0; }
+
+    .about-img {
+      width: 60vw;
+      margin: auto;
+    }
+
+    p {
+      width: 100%;
+    }
+
+    .signature {
+      margin: 0 auto;
+    }
   }
 }

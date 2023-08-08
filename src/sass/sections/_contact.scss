@@ -50,8 +50,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 1vh 0;
-    font-size: 1rem;
+    padding: 2vh 0;
+    font-size: .8rem;
     pointer-events: none;
     transition: .5s;
     color: a.$white;
@@ -64,7 +64,7 @@
 .field input:valid ~ label {
   top: -2.5vh;
   left: 0;
-  font-size: 0.9rem;
+  font-size: .7rem;
   color: a.$white;
 }
 
@@ -77,4 +77,19 @@ input:-webkit-autofill:active{
 
 input:-webkit-autofill{
   -webkit-text-fill-color: a.$white !important;
+}
+
+@media (max-width: 576px) {
+  .contact {
+    padding: 15vh 0;
+  }
+
+  .form {
+    width: 90%;
+  
+    .field-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+  }
 }

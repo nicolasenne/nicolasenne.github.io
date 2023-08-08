@@ -23,6 +23,7 @@ nav {
     display: flex;
     gap: 20px;
     font-weight: 700;
+    font-size: 0.8rem;
   }
 
   a {
@@ -39,9 +40,19 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 0.9em;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 50px;
   position: fixed;
   color: a.$white;
   mix-blend-mode: difference;
+}
+
+@media (max-width: 576px) {
+  nav {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
 }

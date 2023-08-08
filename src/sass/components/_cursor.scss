@@ -1,0 +1,14 @@
+@use '../abstracts/colors' as a;
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  background: a.$white;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 9999;
+  pointer-events: none;
+  margin-top: -15px;
+  margin-left: -15px;
+  position: absolute;
+}

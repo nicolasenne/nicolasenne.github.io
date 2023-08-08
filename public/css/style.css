@@ -387,10 +387,88 @@ ul, li {
   padding: 0;
 }
 
+.btn {
+  background: #000;
+  background-size: 400% 400%;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  padding: 0.8rem 2rem;
+  transition: 0.2s ease-in-out;
+  width: 12rem;
+  border: 1px solid #fff;
+  display: block;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-send {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+#status {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  z-index: 1;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+#status .success {
+  transform-origin: 50% 50%;
+  transform: translateY(-50%) rotate(0deg) scale(0);
+  transition: 0.3s ease;
+  color: #fff;
+  font-size: 24px;
+}
+#status .success:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-send.is_active {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+
+.btn-send.is_active .success {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-send.is_active span {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  z-index: 9999;
+  pointer-events: none;
+  margin-top: -15px;
+  margin-left: -15px;
+  position: absolute;
+}
+
 nav {
   padding: 50px 100px 50px 75px;
   position: fixed;
   width: 100%;
+  color: #fff;
+  mix-blend-mode: difference;
 }
 nav .menu {
   display: flex;
@@ -399,6 +477,8 @@ nav .menu {
 }
 nav .logo {
   width: 40px;
+  color: #000;
+  mix-blend-mode: normal;
 }
 nav .links {
   display: flex;
@@ -417,6 +497,8 @@ nav .links {
   font-size: 1.2rem;
   padding: 50px;
   position: fixed;
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .container {
@@ -428,6 +510,7 @@ body {
   font-family: "FSLucasPro";
   font-weight: 500;
   color: #808080;
+  mix-blend-mode: difference;
 }
 
 h1, h2 {
@@ -455,6 +538,11 @@ a {
 .bg-black {
   background-color: #000;
   color: #fff;
+  mix-blend-mode: difference;
+}
+
+.bg {
+  background: #fff;
 }
 
 .about-bg {
@@ -519,6 +607,77 @@ a {
   padding-bottom: 25px;
 }
 
+.contact {
+  height: 100vh;
+  padding: 15vh 15vh 0 0;
+  text-align: center;
+}
+
+.form {
+  width: 60%;
+  margin: 2rem auto;
+}
+.form .field-flex {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.form-info h2 {
+  color: #fff;
+}
+.form-info p {
+  margin: 32px 0;
+}
+
+.field {
+  position: relative;
+  width: 100%;
+}
+.field input {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  margin-bottom: 4vh;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+.field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1vh 0;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #fff;
+  font-weight: 700;
+  background: transparent;
+}
+
+.field input:focus ~ label,
+.field input:valid ~ label {
+  top: -2.5vh;
+  left: 0;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
+}
+
 main {
   color: #fff;
   padding: 15vh 0;
@@ -576,7 +735,7 @@ main {
   grid-template-rows: repeat(8, auto);
   place-items: center;
   gap: 32px;
-  text-wrap: balance;
+  padding-bottom: 15vh;
 }
 .work .item1 {
   grid-area: 1/1/span 4/span 1;
@@ -620,5 +779,5 @@ main {
 }
 
 .work-title {
-  margin: 15vh 0 10vh;
+  padding: 15vh 0 10vh;
 }

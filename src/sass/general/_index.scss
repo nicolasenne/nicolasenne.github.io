@@ -5,6 +5,7 @@ body {
   font-family: 'FSLucasPro';
   font-weight: 500;
   color: a.$gray;
+  mix-blend-mode: difference;
 }
 
 h1, h2 {
@@ -32,4 +33,9 @@ a {
 .bg-black {
   background-color: a.$black;
   color: a.$white;
+  mix-blend-mode: difference;
+}
+
+.bg {
+  background: a.$white;
 }

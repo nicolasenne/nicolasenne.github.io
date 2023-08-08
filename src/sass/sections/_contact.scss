@@ -1,0 +1,80 @@
+@use '../abstracts/colors' as a;
+
+.contact {
+  height: 100vh;
+  padding: 15vh 15vh 0 0;
+  text-align: center;
+}
+
+.form {
+  width: 60%;
+  margin: 2rem auto;
+
+  .field-flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
+}
+
+.form-info {
+
+  h2 {
+    color: a.$white;
+  }
+
+  p {
+    margin: 32px 0;
+  }
+}
+
+
+.field {
+  position: relative;
+  width: 100%;
+  
+  input {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    margin-bottom: 4vh;
+    border: none;
+    border-bottom: 1px solid a.$white;
+    outline: none;
+    background: transparent;
+    color: a.$white;
+  }
+  
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1vh 0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+    color: a.$white;
+    font-weight: 700;
+    background: transparent;
+  }
+}
+
+.field input:focus ~ label,
+.field input:valid ~ label {
+  top: -2.5vh;
+  left: 0;
+  font-size: 0.9rem;
+  color: a.$white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px a.$white inset !important;
+}
+
+input:-webkit-autofill{
+  -webkit-text-fill-color: a.$white !important;
+}

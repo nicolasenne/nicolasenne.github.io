@@ -6,7 +6,7 @@
   grid-template-rows: repeat(8, auto);
   place-items: center;
   gap: 32px;
-  text-wrap: balance;
+  padding-bottom: 15vh;
 
   .item1 { grid-area: 1 / 1 / span 4 / span 1; }
   .item2 { grid-area: 1 / 2 / span 2 / span 1; }
@@ -42,5 +42,5 @@
 }
 
 .work-title {
-  margin: 15vh 0 10vh;
+  padding: 15vh 0 10vh;
 }

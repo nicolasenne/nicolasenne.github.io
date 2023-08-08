@@ -25,6 +25,10 @@ nav {
     font-weight: 700;
   }
 
+  a {
+    color: a.$white;
+    mix-blend-mode: difference;
+  }
 }
 
 .social {

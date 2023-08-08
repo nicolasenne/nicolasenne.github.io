@@ -485,6 +485,10 @@ nav .links {
   gap: 20px;
   font-weight: 700;
 }
+nav a {
+  color: #fff;
+  mix-blend-mode: difference;
+}
 
 .social {
   height: 100%;

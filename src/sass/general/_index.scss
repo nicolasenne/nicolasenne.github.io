@@ -3,6 +3,7 @@
 
 html {
   font-size: calc(14px + 0.390625vw);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,7 +40,6 @@ a {
 .bg-black {
   background-color: a.$black;
   color: a.$white;
-  mix-blend-mode: difference;
 }
 
 .bg {

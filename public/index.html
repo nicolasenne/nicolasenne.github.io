@@ -9,27 +9,28 @@
     <meta name="copyright" content="nicolasenne 2023" />
     <meta http-equiv="content-language" content="en" />
     <title>Nicolas Enne | Front-end Developer</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/pikachu.svg">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Navbar -->
     <nav>
       <div class="menu">
-        <img class="logo" src="assets/images/logo.svg" alt="Enne logo">
+        <a href="#main"><img class="logo" src="assets/images/logo.svg" alt="Enne logo"></a>
         <ul class="links">
-          <li><a href="#">About</a></li>
-          <li><a href="">Work</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <ul class="social">
-      <li><i class="bi bi-github"></i></li>
-      <li><i class="bi bi-linkedin"></i></li>
-      <li><i class="bi bi-instagram"></i></li>
+      <li><a href="https://github.com/nicolasenne" target="_blank"><i class="bi bi-github social-icon"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/nicolasenne/" target="_blank"><i class="bi bi-linkedin social-icon"></i></a></li>
+      <li><a href="https://www.instaram.com/nicolasenne" target="_blank"><i class="bi bi-instagram social-icon"></i></a></li>
     </ul>
     <!-- Main Section -->
-    <div class="bg">
+    <div class="bg" id="main">
       <div class="container">
         <main>
           <div class="banner">
@@ -38,7 +39,7 @@
               <h1>Nicolas Enne.</h1>
               <h2>I code & design things for the web.</h2>
               <h3>Front-end developer, designer, teacher, advertiser, musician, traveler and Pokémon™ trainer.</h3>
-              <a href="#">Contact Me <i class="bi bi-arrow-right-short"></i></a>
+              <a href="#contact">Contact Me <i class="bi bi-arrow-right-short"></i></a>
             </div>
             <img src="assets/images/main.webp" alt="nicolas enne photo">
           </div>
@@ -46,7 +47,7 @@
       </div>
     </div>
     <!-- About -->
-    <div class="about-bg">
+    <div class="about-bg" id="about">
       <div class="container">
         <section class="about">
           <div></div>
@@ -78,21 +79,21 @@
       </div>
     </div>
     <!-- Work -->
-    <div class="bg">
+    <div class="bg" id="work">
       <div class="container">
         <h2 class="work-title">What I've Done</h2>
         <section class="work">
-          <a class="item1" href="#"><img src="assets/images/work-1.webp" alt="find your plants image"></a>
+          <a class="item1" href="https://github.com/nicolasenne/plants-vs-zombies" target="_blank"><img src="assets/images/work-1.webp" alt="Find Your Plants image"></a>
           <div class="item2 project">
             <h4>Find Your Plants</h4>
             <p>E-commerce to buy and sell Plants vs Zombies™ plants in order to make your garden zombie free.</p>
-            <a href="#">View on Github</a>
+            <a href="https://github.com/nicolasenne/plants-vs-zombies" target="_blank">View on Github</a>
           </div>
-          <a class="item3" href="#"><img src="assets/images/work-2.webp" alt="Where2Live image"></a>
+          <a class="item3" href="https://github.com/nicolasenne/where2live" target="_blank"><img src="assets/images/work-2.webp" alt="Where2Live image"></a>
           <div class="item4 project">
             <h4>Where2Live</h4>
             <p>An app to help you find a well suited place, with a safe neighbourhood and detailed information.</p>
-            <a href="#">View on Github</a>
+            <a href="https://github.com/nicolasenne/where2live" target="_blank">View on Github</a>
           </div>
           <a class="item5" href="#"><img src="assets/images/work-3.webp" alt="Sol Pay image"></a>
           <div class="item6 project">
@@ -100,12 +101,12 @@
             <p>A hands-on friendly environmental energy platform with a contact form.</p>
             <a href="#">View on Github</a>
           </div>
-          <!-- <img src="assets/images/pikachu.svg" alt="pikachu silhouette" width="50"> -->
         </section>
+        <img class="pikachu" src="assets/images/pikachu.svg" alt="pikachu silhouette">
       </div>
     </div>
     <!-- Contact -->
-    <section class="contact bg-black">
+    <section class="contact bg-black" id="contact">
       <div class="container">
         <form class="form" id="my-form" method="POST" action="https://formspree.io/f/xleapbeo">
           <div class="form-info">
@@ -139,6 +140,9 @@
         </form>
       </div>
     </section>
+    <!-- <footer>
+      <p>This website was designed and coded by Nicolas Enne.</p>
+    </footer> -->
     <!-- JavaScript -->
     <script src="js/cursor.js"></script>
     <script src="js/sent.js"></script>

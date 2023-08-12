@@ -29,7 +29,6 @@
   }
 }
 
-
 .field {
   position: relative;
   width: 100%;
@@ -62,7 +61,7 @@
 
 .field input:focus ~ label,
 .field input:valid ~ label {
-  top: -2.5vh;
+  top: -3.5vh;
   left: 0;
   font-size: .7rem;
   color: a.$white;
@@ -72,7 +71,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px a.$white inset !important;
+    -webkit-box-shadow: 0 0 0 30px a.$black inset !important;
 }
 
 input:-webkit-autofill{

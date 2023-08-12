@@ -469,6 +469,7 @@ nav {
   width: 100%;
   color: #fff;
   mix-blend-mode: difference;
+  z-index: 1;
 }
 nav .menu {
   display: flex;
@@ -476,7 +477,7 @@ nav .menu {
   align-items: center;
 }
 nav .logo {
-  width: 40px;
+  width: 44px;
   color: #000;
   mix-blend-mode: normal;
 }
@@ -489,6 +490,10 @@ nav .links {
 nav a {
   color: #fff;
   mix-blend-mode: difference;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #808080;
 }
 
 .social {
@@ -499,11 +504,20 @@ nav a {
   justify-content: center;
   align-items: center;
   gap: 0.9em;
-  font-size: 1rem;
   padding: 50px;
   position: fixed;
   color: #fff;
   mix-blend-mode: difference;
+}
+.social .social-icon {
+  color: #fff;
+  mix-blend-mode: difference;
+  transition: 0.4s;
+  font-size: 1.1rem;
+}
+.social .social-icon:hover {
+  transition: 0.4s;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 576px) {
@@ -526,6 +540,7 @@ nav a {
 }
 html {
   font-size: calc(14px + 0.390625vw);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -562,7 +577,6 @@ a {
 .bg-black {
   background-color: #000;
   color: #fff;
-  mix-blend-mode: difference;
 }
 
 .bg {
@@ -734,7 +748,7 @@ a {
 
 .field input:focus ~ label,
 .field input:valid ~ label {
-  top: -2.5vh;
+  top: -3.5vh;
   left: 0;
   font-size: 0.7rem;
   color: #fff;
@@ -744,7 +758,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+  -webkit-box-shadow: 0 0 0 30px #000 inset !important;
 }
 
 input:-webkit-autofill {
@@ -763,6 +777,10 @@ input:-webkit-autofill {
     gap: 0;
   }
 }
+footer {
+  height: 20vh;
+}
+
 main {
   color: #fff;
   padding: 15vh 0;
@@ -876,6 +894,10 @@ main {
   padding: 15vh 0 10vh;
 }
 
+.pikachu {
+  width: 72px;
+}
+
 @media (max-width: 576px) {
   .work {
     display: grid;
@@ -906,5 +928,8 @@ main {
   }
   h4 {
     font-size: 1.2rem;
+  }
+  .pikachu {
+    margin: auto;
   }
 }

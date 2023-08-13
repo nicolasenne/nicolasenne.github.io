@@ -388,29 +388,37 @@ ul, li {
 }
 
 .btn {
-  background: #000;
-  background-size: 400% 400%;
-  border-radius: 50px;
+  position: relative;
+  border: 2px solid #fff;
   color: #fff;
-  display: inline-block;
-  font-weight: 700;
+  text-decoration: none;
   margin: 1.5rem auto;
-  padding: 0.5rem 2rem;
-  transition: 0.2s ease-in-out;
-  width: 12rem;
-  border: 1px solid #fff;
-  display: block;
+  padding: 0.5rem 3rem;
+  transition: 0.2s;
+  background-color: black;
+  font-weight: 700;
   cursor: pointer;
 }
 .btn:hover {
-  background: #fff;
   color: #000;
+  background-color: #fff;
 }
-
-.btn-send {
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s ease;
+.btn:after {
+  content: " ";
+  border: 10px solid #000;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  transition: all 0.3s;
+  mix-blend-mode: difference;
+}
+.btn:hover:after {
+  border: 3px solid #fff;
+  width: calc(100% - 20px);
+  height: calc(100% + 20px);
 }
 
 #status {
@@ -421,7 +429,6 @@ ul, li {
   visibility: hidden;
   transition: 0.3s ease;
 }
-
 #status .success {
   transform-origin: 50% 50%;
   transform: translateY(-50%) rotate(0deg) scale(0);
@@ -429,23 +436,23 @@ ul, li {
   color: #fff;
   font-size: 24px;
 }
-#status .success:hover {
-  background: #fff;
-  color: #000;
-}
 
-.btn-send.is_active {
+.btn.active {
   width: 50px;
   height: 50px;
   padding: 0;
 }
-
-.btn-send.is_active .success {
+.btn.active:hover {
+  background-color: #000;
+}
+.btn.active:hover:after {
+  border: none;
+}
+.btn.active .success {
   opacity: 1;
   visibility: visible;
 }
-
-.btn-send.is_active span {
+.btn.active span {
   opacity: 0;
   visibility: hidden;
 }
@@ -538,6 +545,11 @@ nav a:hover {
     padding-left: 5%;
   }
 }
+::selection {
+  background: #808080;
+  color: #fff;
+}
+
 html {
   font-size: calc(14px + 0.390625vw);
   scroll-behavior: smooth;
@@ -548,7 +560,6 @@ body {
   font-weight: 500;
   color: #808080;
   mix-blend-mode: difference;
-  text-wrap: balance;
 }
 
 h1, h2 {
@@ -728,7 +739,7 @@ a {
   font-size: 1rem;
   margin-bottom: 4vh;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #fff;
   outline: none;
   background: transparent;
   color: #fff;
@@ -738,11 +749,11 @@ a {
   top: 0;
   left: 0;
   padding: 2vh 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   pointer-events: none;
   transition: 0.5s;
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   background: transparent;
 }
 
@@ -793,7 +804,7 @@ main {
   justify-content: center;
   border-radius: 12px;
   height: 75vh;
-  padding: 0 100px 0 50px;
+  padding: 0 180px 0 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   font-weight: 700;
 }

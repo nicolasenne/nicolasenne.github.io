@@ -1,4 +1,4 @@
-var form = document.getElementById("my-form");
+const form = document.getElementById("my-form");
 
 async function handleSubmit(event) {
   event.preventDefault();
@@ -12,23 +12,24 @@ async function handleSubmit(event) {
     }
   }).then(response => {
     let btn = document.querySelector("button");
-
     btn.addEventListener("click", active);
 
     function active() {
-      btn.classList.toggle("is_active");
+      btn.classList.toggle("active");
     }
+
     form.reset()
   }).catch(error => {
     status.innerHTML = "Oops! There was a problem submitting your form"
   });
 }
+
 form.addEventListener("submit", handleSubmit)
 
-let btn = document.querySelector("button");
+const btn = document.querySelector("button");
 
 btn.addEventListener("click", active);
 
 function active() {
-  btn.classList.toggle("is_active");
+  btn.classList.toggle("active");
 }

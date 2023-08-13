@@ -1,6 +1,11 @@
 @use '../abstracts/colors' as a;
 @forward '../general/container';
 
+::selection {
+  background: a.$gray;
+  color: a.$white;
+}
+
 html {
   font-size: calc(14px + 0.390625vw);
   scroll-behavior: smooth;
@@ -11,7 +16,7 @@ body {
   font-weight: 500;
   color: a.$gray;
   mix-blend-mode: difference;
-  text-wrap: balance;
+  // text-wrap: balance;
 }
 
 h1, h2 {
@@ -25,7 +30,7 @@ h2 {
 }
 
 h3, p {
-  font-size: 0.9rem;
+  font-size: .9rem;
 }
 
 h4 {

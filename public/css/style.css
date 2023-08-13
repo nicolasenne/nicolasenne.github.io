@@ -387,7 +387,47 @@ ul, li {
   padding: 0;
 }
 
-.btn {
+.btn-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  position: relative;
+  width: 180px;
+}
+.btn-main:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background: #fff;
+  mix-blend-mode: difference;
+  transform: translateY(-50%) translateX(120%);
+  transition: 0.3s;
+}
+.btn-main:hover::before {
+  transform: translateY(-50%) translateX(0);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 50px;
+}
+.btn-main i {
+  margin-left: 5px;
+  transition: 0.3s;
+  color: #fff;
+  mix-blend-mode: difference;
+  font-size: 1.3rem;
+}
+.btn-main:hover i {
+  transform: translateX(4px);
+}
+
+.btn-send {
   position: relative;
   border: 2px solid #fff;
   color: #fff;
@@ -399,11 +439,11 @@ ul, li {
   font-weight: 700;
   cursor: pointer;
 }
-.btn:hover {
+.btn-send:hover {
   color: #000;
   background-color: #fff;
 }
-.btn:after {
+.btn-send:after {
   content: " ";
   border: 10px solid #000;
   display: inline-block;
@@ -415,7 +455,7 @@ ul, li {
   transition: all 0.3s;
   mix-blend-mode: difference;
 }
-.btn:hover:after {
+.btn-send:hover:after {
   border: 3px solid #fff;
   width: calc(100% - 20px);
   height: calc(100% + 20px);
@@ -437,22 +477,22 @@ ul, li {
   font-size: 24px;
 }
 
-.btn.active {
+.btn-send.active {
   width: 50px;
   height: 50px;
   padding: 0;
 }
-.btn.active:hover {
+.btn-send.active:hover {
   background-color: #000;
 }
-.btn.active:hover:after {
+.btn-send.active:hover:after {
   border: none;
 }
-.btn.active .success {
+.btn-send.active .success {
   opacity: 1;
   visibility: visible;
 }
-.btn.active span {
+.btn-send.active span {
   opacity: 0;
   visibility: hidden;
 }
@@ -821,11 +861,11 @@ main {
 }
 .banner-info h1 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .banner-info h2 {
   color: #808080;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .banner-info h3, .banner-info p {
   font-size: 1rem;

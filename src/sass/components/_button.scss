@@ -9,38 +9,38 @@
   border: none;
   padding: 12px 0;
   position: relative;
-  width: 180px;
+  width: 188px;
 
   &:before {
     content: "";
     position: absolute;
     top: 50%;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     background: a.$white;
     mix-blend-mode: difference;
-    transform: translateY(-50%) translateX(120%);
-    transition: .3s;
+    transform: translateY(-50%) translateX(100%);
+    transition: .7s;
   }
 
   &:hover::before {
     transform: translateY(-50%) translateX(0);
-    transition: .3s;
+    transition: .7s;
     width: 100%;
     border-radius: 50px;
   }
 
   i {
-    margin-left: 5px;
     transition: .3s;
     color: a.$white;
     mix-blend-mode: difference;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin-top: 4px;
   }
   
   &:hover i {
-    transform: translateX(4px);
+    transform: translateX(8px);
   }
 }
 

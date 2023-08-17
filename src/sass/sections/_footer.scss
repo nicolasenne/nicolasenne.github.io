@@ -2,4 +2,20 @@
 
 footer {
   height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: .8rem;
+  }
+
+  p::before {
+    display: block;
+    content: '';
+    width: 50%;
+    margin: 0 auto 2rem;
+    height: 2px;
+    background: a.$gray;
+  }
 }

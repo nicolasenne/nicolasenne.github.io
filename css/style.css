@@ -548,13 +548,22 @@ nav a:hover {
   width: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   gap: 0.9em;
-  padding: 50px;
+  padding: 0 50px;
   position: fixed;
   color: #fff;
   mix-blend-mode: difference;
+}
+.social::after {
+  display: block;
+  content: "";
+  width: 2px;
+  margin: 0 auto;
+  height: 10%;
+  mix-blend-mode: difference;
+  background: #fff;
 }
 .social .social-icon {
   color: #fff;
@@ -644,6 +653,7 @@ a {
   grid-template-columns: auto auto;
   gap: 2vh 4vw;
   color: #000;
+  padding-top: 10vh;
   text-wrap: balance;
 }
 .about > div {
@@ -844,11 +854,25 @@ input:-webkit-autofill {
 }
 footer {
   height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 0.8rem;
+}
+footer p::before {
+  display: block;
+  content: "";
+  width: 50%;
+  margin: 0 auto 2rem;
+  height: 2px;
+  background: #808080;
 }
 
 main {
   color: #fff;
-  padding: 15vh 0;
+  padding: 15vh 0 5vh;
 }
 
 .banner {

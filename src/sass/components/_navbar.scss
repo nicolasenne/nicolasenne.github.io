@@ -43,23 +43,13 @@ nav {
   width: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 0.9em;
   padding: 0 50px;
   position: fixed;
   color: a.$white;
   mix-blend-mode: difference;
-
-  &::after {
-    display: block;
-    content: '';
-    width: 2px;
-    margin: 0 auto;
-    height: 10%;
-    mix-blend-mode: difference;
-    background: a.$white;
-  }
   
   .social-icon {
     color: a.$white;

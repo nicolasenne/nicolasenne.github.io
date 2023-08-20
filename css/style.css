@@ -548,22 +548,13 @@ nav a:hover {
   width: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 0.9em;
   padding: 0 50px;
   position: fixed;
   color: #fff;
   mix-blend-mode: difference;
-}
-.social::after {
-  display: block;
-  content: "";
-  width: 2px;
-  margin: 0 auto;
-  height: 10%;
-  mix-blend-mode: difference;
-  background: #fff;
 }
 .social .social-icon {
   color: #fff;

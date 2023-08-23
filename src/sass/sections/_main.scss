@@ -5,22 +5,23 @@ main {
   padding: 15vh 0 5vh;
 }
 
-.banner {
-  background-color: a.$black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 24px;
-  height: 75vh;
-  padding: 0 180px 0 50px;
-  box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
-  font-weight: 700;
+// .banner {
+//   background-color: a.$black;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 24px;
+//   height: 75vh;
+//   padding: 0 180px 0 50px;
+//   box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
+//   font-weight: 700;
 
-  img {
-    height: 125%;
-    margin-bottom: 19vh;
-  }
-}
+//   img {
+//     height: 125%;
+//     margin-bottom: 19vh;
+//   }
+// }
+
 
 .banner-info {
   color: a.$gray;

@@ -1,7 +1,15 @@
 @use '../abstracts/colors' as a;
 
 .about-bg {
-  background: linear-gradient(#fff 60%, 0, #000 40%);
+  background: linear-gradient(#fff 55%, 0, #000 45%);
+  padding-top: 10vh;
+}
+
+#about {
+  top: -30%;
+  left: 40%;
+  width: 60%;
+  margin: 0;
 }
 
 .about {
@@ -10,8 +18,8 @@
   grid-template-columns: auto auto;
   gap: 2vh 4vw;
   color: a.$black;
-  padding-top: 10vh;
-  text-wrap: balance;
+  // padding-top: 30vh;
+  // text-wrap: balance;
 
   > div {
     padding: 28px 0;
@@ -22,15 +30,8 @@
   .item2 { grid-area: 2 / 1 / span 3 / span 1; display:flex; gap: 1rem; }
   .item3 { grid-area: 2 / 2 / span 1 / span 2; display:flex; gap: 1rem; }
   .item4 { grid-area: 3 / 2 / span 1 / span 2; display:flex; gap: 1rem; }
-  .item5 { grid-area: 4 / 2 / span 1 / span 2; display:flex; gap: 1rem; h4, i, p, a { color: a.$white; } }
+  .item5 { grid-area: 4 / 2 / span 1 / span 2; display:flex; gap: 1rem; } //h4, i, p, a { color: a.$white; }
   .item6 { grid-area: 5 / 2 / span 1 / span 2; display:flex; gap: 1rem; }
-
-  .about-img {
-    border-radius: 12px;
-    box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
-    // height: 100%;
-    // object-fit: cover;
-  }
 
   > div > i {
     font-size: 1.6rem;
@@ -55,7 +56,6 @@
     left: 0;
     }
   }
-
 
   .signature {
     padding-bottom: 25px;
@@ -92,4 +92,15 @@
       margin: 0 auto;
     }
   }
+}
+
+.container-img {
+  padding-top: 90vh;
+  right: 40%;
+}
+
+.about-img {
+  border-radius: 24px;
+  box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
+  transform: translateZ(-2px) scale(.7);
 }

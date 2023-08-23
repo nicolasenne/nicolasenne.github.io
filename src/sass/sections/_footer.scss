@@ -5,9 +5,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20vh 0;
+  z-index: 10;
+  background-color: red;
 
   p {
     font-size: .8rem;
+    color: white;
   }
 
   p::before {

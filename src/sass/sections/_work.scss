@@ -1,5 +1,9 @@
 @use '../abstracts/colors' as a;
 
+#work {
+  padding-left: 5vw;;
+}
+
 .work {
   display: grid;
   grid-template-columns: repeat(3, min(20vw, 300px));
@@ -46,7 +50,8 @@
 }
 
 .pikachu {
-  width: 72px;
+  width: 6vw;
+  padding-bottom: 10vh;
 }
 
 @media (max-width: 576px) {

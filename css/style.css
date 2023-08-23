@@ -590,6 +590,8 @@ nav a:hover {
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 5px;
+  padding-top: 10vh;
+  background-color: #fff;
 }
 
 section {
@@ -629,6 +631,7 @@ section:last-of-type {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin-left: 4vw;
 }
 .parallax .banner img {
   height: 120%;
@@ -639,6 +642,7 @@ section:last-of-type {
   display: flex;
   flex-direction: column;
   padding-top: 25vh;
+  margin-left: 4vw;
   width: 50%;
   gap: 12px;
 }
@@ -698,8 +702,10 @@ a {
 }
 
 #about {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  top: -30%;
+  left: 40%;
+  width: 60%;
+  margin: 0;
 }
 
 .about {
@@ -708,7 +714,6 @@ a {
   grid-template-columns: auto auto;
   gap: 2vh 4vw;
   color: #000;
-  padding-top: 30vh;
 }
 .about > div {
   padding: 28px 0;
@@ -816,10 +821,15 @@ a {
     margin: 0 auto;
   }
 }
+.container-img {
+  padding-top: 90vh;
+  right: 40%;
+}
+
 .about-img {
-  border-radius: 12px;
+  border-radius: 24px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  transform: translateZ(-5px) scale(0.8);
+  transform: translateZ(-2px) scale(0.7);
 }
 
 .contact {

@@ -3,6 +3,8 @@
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 5px;
+  padding-top: 10vh;
+  background-color: #fff;
 }
 
 section {
@@ -45,6 +47,7 @@ section {
     display: flex;
     justify-content: end;
     align-items: center;
+    margin-left: 4vw;
 
     img {
       height: 120%;
@@ -58,6 +61,7 @@ section {
     display: flex;
     flex-direction: column;
     padding-top: 25vh;
+    margin-left: 4vw;
     width: 50%;
     gap: 12px;
   }

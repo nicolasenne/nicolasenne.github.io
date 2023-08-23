@@ -1,5 +1,6 @@
 @use '../abstracts/colors' as a;
 @forward '../general/container';
+@forward '../general/parallax';
 
 ::selection {
   background: a.$gray;

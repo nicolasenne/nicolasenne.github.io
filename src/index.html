@@ -30,28 +30,27 @@
       <li><a href="https://www.instagram.com/nicolasenne" target="_blank"><i class="bi bi-instagram social-icon"></i></a></li>
     </ul>
     <!-- Main Section -->
-    <div class="bg" id="main">
-      <div class="container">
-        <main>
+    <div class="body-wrapper">
+      <section class="parallax">
           <div class="banner">
-            <div class="banner-info">
-              <p>Hello, my name is</p>
-              <h1>Nicolas Enne.</h1>
-              <h2>I code & design things for the web.</h2>
-              <h3>Front-end developer, designer, teacher, advertiser, musician, traveler and Pokémon™ trainer.</h3>
-              <a class="btn-main" href="#contact">Contact Me<i class="bi bi-arrow-right-short"></i></a>
-            </div>
-            <img src="assets/images/main.webp" alt="Nicolas Enne photo">
+            <img class="main-img" src="assets/images/main.webp" alt="Nicolas Enne photo">
           </div>
-        </main>
-      </div>
-    </div>
-    <!-- About -->
-    <div class="about-bg" id="about">
-      <div class="container">
-        <section class="about">
+          <div class="container banner-info">
+            <p>Hello, my name is</p>
+            <h1>Nicolas Enne.</h1>
+            <h2>I code & design things for the web.</h2>
+            <h3>Front-end developer, designer, teacher, advertiser, musician, traveler and Pokémon™ trainer.</h3>
+            <a class="btn-main" href="#contact">Contact Me<i class="bi bi-arrow-right-short"></i></a>
+          </div>
+      </section>
+
+      <!-- About -->
+      <section class="parallax container container-img">
+        <img class="about-img" src="assets/images/about.webp" alt="Nicolas Enne photo">
+      </section>
+      <section id="about" class="parallax">
+        <div class="about">
           <h2 class="item1">Who I Am</h2>
-          <img class="about-img item2" src="assets/images/about.webp" alt="Nicolas Enne photo" loading="lazy">
           <div class="item3">
             <i class="bi bi-lightbulb"></i>
             <div>
@@ -74,80 +73,82 @@
             </div>
           </div>
           <img class="signature item6" src="assets/images/signature.svg" alt="Nicolas Enne signature">
+        </div>
+      </section>
+      <!-- Work -->
+        <section id="work">
+          <div class="container">
+            <h2 class="work-title">What I've Done</h2>
+            <div class="work">
+              <a class="item1" href="https://github.com/nicolasenne/plants-vs-zombies" target="_blank"><img src="assets/images/work-1.webp" alt="Find Your Plants image"></a>
+              <div class="item2 project">
+                <h4>Find Your Plants</h4>
+                <p>E-commerce to buy and sell Plants vs Zombies™ plants in order to make your garden zombie free.</p>
+                <a href="https://github.com/nicolasenne/plants-vs-zombies" target="_blank">View on Github</a>
+              </div>
+              <a class="item3" href="https://github.com/nicolasenne/where2live" target="_blank"><img src="assets/images/work-2.webp" alt="Where2Live image"></a>
+              <div class="item4 project">
+                <h4>Where2Live</h4>
+                <p>An app to help you find a well suited place, with a safe neighbourhood and detailed information.</p>
+                <a href="https://github.com/nicolasenne/where2live" target="_blank">View on Github</a>
+              </div>
+              <a class="item5" href="#"><img src="assets/images/work-3.webp" alt="Sol Pay image"></a>
+              <div class="item6 project">
+                <h4>Sol Pay</h4>
+                <p>A hands-on friendly environmental energy platform with a contact form.</p>
+                <a href="https://github.com/nicolasenne/sol-pay">View on Github</a>
+              </div>
+            </div>
+            <img class="pikachu" src="assets/images/pikachu.svg" alt="pikachu silhouette">
+          </div>
+        </section>
+      <!-- Contact -->
+      <div class="parallax">
+        <section class="contact bg-black" id="contact">
+          <div class="container">
+            <form class="form" id="my-form" method="POST" action="https://formspree.io/f/xleapbeo">
+              <div class="form-info">
+                <h2>Send Me A Line</h2>
+                <p>I work with organizations and individuals to create beautiful, responsive, and scalable web products tailor-made for them. Think we can make something great together? Just send me a message.</p>
+              </div>
+              <div class="field-flex">
+                <div class="field">
+                  <input type="text" id="name" required>
+                  <label for="name">Name</label>
+                </div>
+                <div class="field">
+                  <input type="email" id="email" required>
+                  <label for="email">E-mail</label>
+                </div>
+              </div>
+              <div class="field">
+                <input type="text" id="subject" required>
+                <label for="subject">Subject</label>
+              </div>
+              <div class="field">
+                <input type="textarea" id="message" required>
+                <label for="message">Message</label>
+              </div>
+              <!-- <button type="submit" class="btn btn-send">
+                <span>Send</span>
+                <div id="status">
+                  <i class="bi bi-check-lg success"></i>
+                </div>
+              </button> -->
+              <button type="submit" class="btn-send">
+                <span>Send</span>
+                <div id="status">
+                  <i class="bi bi-check-lg success"></i>
+                </div>
+              </button>
+            </form>
+          </div>
         </section>
       </div>
+      <footer class="bg-black">
+        <p>Coded and designed by Nicolas Enne™</p>
+      </footer>
     </div>
-    <!-- Work -->
-    <div class="bg" id="work">
-      <div class="container">
-        <h2 class="work-title">What I've Done</h2>
-        <section class="work">
-          <a class="item1" href="https://github.com/nicolasenne/plants-vs-zombies" target="_blank"><img src="assets/images/work-1.webp" alt="Find Your Plants image"></a>
-          <div class="item2 project">
-            <h4>Find Your Plants</h4>
-            <p>E-commerce to buy and sell Plants vs Zombies™ plants in order to make your garden zombie free.</p>
-            <a href="https://github.com/nicolasenne/plants-vs-zombies" target="_blank">View on Github</a>
-          </div>
-          <a class="item3" href="https://github.com/nicolasenne/where2live" target="_blank"><img src="assets/images/work-2.webp" alt="Where2Live image"></a>
-          <div class="item4 project">
-            <h4>Where2Live</h4>
-            <p>An app to help you find a well suited place, with a safe neighbourhood and detailed information.</p>
-            <a href="https://github.com/nicolasenne/where2live" target="_blank">View on Github</a>
-          </div>
-          <a class="item5" href="#"><img src="assets/images/work-3.webp" alt="Sol Pay image"></a>
-          <div class="item6 project">
-            <h4>Sol Pay</h4>
-            <p>A hands-on friendly environmental energy platform with a contact form.</p>
-            <a href="https://github.com/nicolasenne/sol-pay">View on Github</a>
-          </div>
-        </section>
-        <img class="pikachu" src="assets/images/pikachu.svg" alt="pikachu silhouette">
-      </div>
-    </div>
-    <!-- Contact -->
-    <section class="contact bg-black" id="contact">
-      <div class="container">
-        <form class="form" id="my-form" method="POST" action="https://formspree.io/f/xleapbeo">
-          <div class="form-info">
-            <h2>Send Me A Line</h2>
-            <p>I work with organizations and individuals to create beautiful, responsive, and scalable web products tailor-made for them. Think we can make something great together? Just send me a message.</p>
-          </div>
-          <div class="field-flex">
-            <div class="field">
-              <input type="text" id="name" required>
-              <label for="name">Name</label>
-            </div>
-            <div class="field">
-              <input type="email" id="email" required>
-              <label for="email">E-mail</label>
-            </div>
-          </div>
-          <div class="field">
-            <input type="text" id="subject" required>
-            <label for="subject">Subject</label>
-          </div>
-          <div class="field">
-            <input type="textarea" id="message" required>
-            <label for="message">Message</label>
-          </div>
-          <!-- <button type="submit" class="btn btn-send">
-            <span>Send</span>
-            <div id="status">
-              <i class="bi bi-check-lg success"></i>
-            </div>
-          </button> -->
-          <button type="submit" class="btn-send">
-            <span>Send</span>
-            <div id="status">
-              <i class="bi bi-check-lg success"></i>
-            </div>
-          </button>
-        </form>
-      </div>
-    </section>
-    <footer class="bg-black">
-      <p>Coded and designed by Nicolas Enne™</p>
-    </footer>
     <!-- JavaScript -->
     <script src="js/cursor.js"></script>
     <script src="js/sent.js"></script>

@@ -1,7 +1,7 @@
 @use '../abstracts/colors' as a;
 
 nav {
-  padding: 5vh 10vw 5vh 5vw;
+  padding: 50px 100px 50px 75px;
   position: fixed;
   width: 100%;
   color: a.$white;
@@ -15,7 +15,7 @@ nav {
   }
 
   .logo {
-    width: 7vh;
+    width: 44px;
     color: a.$black;
     mix-blend-mode: normal;
   }
@@ -40,23 +40,22 @@ nav {
 
 .social {
   height: 100%;
-  width: 5vw;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5vh;
-  padding: 0 7vw;
+  gap: 0.9em;
+  padding: 0 50px;
   position: fixed;
   color: a.$white;
   mix-blend-mode: difference;
-  z-index: 1;
   
   .social-icon {
     color: a.$white;
     mix-blend-mode: difference;
     transition: .4s;
-    font-size: 2ch;
+    font-size: 1.1rem;
 
     &:hover {
       transition: .4s;

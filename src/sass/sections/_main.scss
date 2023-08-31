@@ -1,36 +1,32 @@
 @use '../abstracts/colors' as a;
 
-// main {
-//   color: a.$white;
-//   padding: 15vh 0 5vh;
-// }
+main {
+  color: a.$white;
+  padding: 15vh 0 5vh;
+}
 
 .banner {
   background-color: a.$black;
-  box-shadow: 4px 4px 16px rgba($color: a.$black, $alpha: .2);
-  border-radius: 4vh;
-  transform: translateZ(-2px) scale(1.2);
   display: flex;
-  justify-content: end;
   align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  height: 75vh;
+  padding: 0 180px 0 50px;
+  box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
+  font-weight: 700;
 
   img {
-    height: 130%;
-    margin-bottom: 24vh;
-    padding-right: 10vw;
+    height: 125%;
+    margin-bottom: 19vh;
   }
 }
 
-
-#banner-info {
+.banner-info {
   color: a.$gray;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 2vw;
-  width: 50%;
   gap: 12px;
-  font-weight: 700;
 
   h1 {
     color: a.$white;

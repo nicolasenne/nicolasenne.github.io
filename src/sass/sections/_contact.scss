@@ -1,19 +1,14 @@
 @use '../abstracts/colors' as a;
 
-.bg-black {
-  margin-top: 50vh;
-  background-color: a.$black;
-  transform: translateZ(-2px) scale(2.2);
-}
-
 .contact {
+  height: 100vh;
   padding: 15vh 15vh 0 0;
   text-align: center;
 }
 
 .form {
   width: 60%;
-  margin: 50vh auto 0;
+  margin: 2rem auto;
 
   .field-flex {
     display: flex;

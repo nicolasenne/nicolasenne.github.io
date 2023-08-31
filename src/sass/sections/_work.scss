@@ -1,9 +1,5 @@
 @use '../abstracts/colors' as a;
 
-#work {
-  padding-left: 5vw;;
-}
-
 .work {
   display: grid;
   grid-template-columns: repeat(3, min(20vw, 300px));
@@ -46,12 +42,11 @@
 }
 
 .work-title {
-  padding: 0 0 10vh;
+  padding: 15vh 0 10vh;
 }
 
 .pikachu {
-  width: 6vw;
-  padding-bottom: 10vh;
+  width: 72px;
 }
 
 @media (max-width: 576px) {

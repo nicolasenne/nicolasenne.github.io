@@ -1,6 +1,5 @@
 @use '../abstracts/colors' as a;
 @forward '../general/container';
-@forward '../general/parallax';
 
 ::selection {
   background: a.$gray;
@@ -40,6 +39,11 @@ h4 {
 a {
   color: a.$black;
   font-size: .9rem;
+}
+
+.bg-black {
+  background-color: a.$black;
+  color: a.$white;
 }
 
 .bg {

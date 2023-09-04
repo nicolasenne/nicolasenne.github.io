@@ -63,7 +63,7 @@
 .field input:valid ~ label {
   top: -3.5vh;
   left: 0;
-  font-size: .7rem;
+  font-size: .75rem;
   color: a.$white;
 }
 
@@ -76,6 +76,21 @@ input:-webkit-autofill:active{
 
 input:-webkit-autofill{
   -webkit-text-fill-color: a.$white !important;
+}
+
+@media (max-width: 960px) {
+  .contact {
+    padding: 15vh 0;
+  }
+
+  .form {
+    width: 70%;
+  
+    .field-flex {
+        flex-direction: column;
+        gap: 0;
+    }
+  }
 }
 
 @media (max-width: 576px) {

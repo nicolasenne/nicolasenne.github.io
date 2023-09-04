@@ -2,7 +2,7 @@
 
 main {
   color: a.$white;
-  padding: 15vh 0 5vh;
+  padding: 16vh 0 5vh;
 }
 
 .banner {
@@ -12,7 +12,7 @@ main {
   justify-content: center;
   border-radius: 24px;
   height: 75vh;
-  padding: 0 180px 0 50px;
+  padding: 0 180px 0 7vw;
   box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
   font-weight: 700;
 
@@ -30,21 +30,56 @@ main {
 
   h1 {
     color: a.$white;
-    font-size: 2.5rem;
+    font-size: 48px;
   }
 
   h2 {
     color: a.$gray;
-    font-size: 2.5rem;
+    font-size: 48px;
   }
 
-  h3, p {
+  h3 {
     font-size: 1rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 1rem;
+    text-wrap: balance;
   }
 
   a {
     color: a.$white;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 960px) {
+  main {
+    padding: 5% 0 15vh;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    padding: 25vh 5vw;
+    text-wrap: balance;
+
+    img {
+      display: none;
+    }
+
+    .banner-info {
+      
+      h1, h2 {
+        font-size: 3rem;
+      }
+
+      a {
+        margin: auto;
+      }
+    }
   }
 }
 
@@ -64,10 +99,14 @@ main {
       }
 
       .banner-info {
+        
         h2 {
           font-size: 2.5rem;
         }
+
+        a {
+          margin: auto;
+        }
       }
     }
-    
 }

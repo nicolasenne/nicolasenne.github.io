@@ -123,3 +123,17 @@
     visibility: hidden;
   }
 }
+
+@media (max-width: 960px) {
+  .btn-main:before {
+    transform: translateY(-50%) translateX(0);
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn-main:before {
+    transform: translateY(-50%) translateX(0);
+    width: 100%;
+  }
+}

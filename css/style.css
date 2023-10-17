@@ -1,4 +1,31 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+
+.fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+
+.fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+
+/* 7 Adicione o CSS Essencial abaixo */
+[data-anime] {
+  opacity: 0;
+}
+
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
 @font-face {
   font-family: "FSLucasPro";
   src: url("../assets/fonts/FSLucasPro-Bold.ttf");
@@ -930,10 +957,10 @@ input:-webkit-autofill {
   }
 }
 footer {
-  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 20vh;
 }
 footer p {
   font-size: 0.8rem;
@@ -942,7 +969,7 @@ footer p::before {
   display: block;
   content: "";
   width: 50%;
-  margin: 0 auto 2rem;
+  margin: 1rem auto 2rem;
   height: 2px;
   background: #808080;
 }

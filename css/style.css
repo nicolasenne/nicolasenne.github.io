@@ -885,6 +885,7 @@ a {
 }
 .form-info p {
   margin: 32px 0;
+  text-wrap: balance;
 }
 
 .field {

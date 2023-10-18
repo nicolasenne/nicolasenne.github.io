@@ -54,6 +54,20 @@ main {
   }
 }
 
+.social-banner {
+  width: 200px;
+  display: none;
+  justify-content: center;
+  margin: 2rem auto 0;
+  gap: 1em;
+  color: a.$white;
+  mix-blend-mode: difference;
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 960px) {
   main {
     padding: 5% 0 15vh;
@@ -108,5 +122,9 @@ main {
           margin: auto;
         }
       }
+    }
+
+    .social-banner {
+      display: flex;
     }
 }

@@ -1019,6 +1019,19 @@ main {
   font-size: 1rem;
 }
 
+.social-banner {
+  width: 200px;
+  display: none;
+  justify-content: center;
+  margin: 2rem auto 0;
+  gap: 1em;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+.social-banner .social-icon {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 960px) {
   main {
     padding: 5% 0 15vh;
@@ -1058,6 +1071,9 @@ main {
   }
   .banner .banner-info a {
     margin: auto;
+  }
+  .social-banner {
+    display: flex;
   }
 }
 .work {

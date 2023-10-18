@@ -634,6 +634,10 @@ nav a:hover {
   color: #fff;
 }
 
+:root {
+  color-scheme: only light;
+}
+
 html {
   font-size: calc(14px + 0.390625vw);
   scroll-behavior: smooth;
@@ -643,7 +647,6 @@ body {
   font-family: "FSLucasPro";
   font-weight: 500;
   color: #808080;
-  mix-blend-mode: difference;
 }
 
 h1, h2 {
@@ -730,7 +733,6 @@ a {
 .about .about-img {
   border-radius: 12px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  height: 100%;
   object-fit: cover;
 }
 .about > div > i {

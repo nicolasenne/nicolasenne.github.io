@@ -6,6 +6,10 @@
   color: a.$white;
 }
 
+:root {
+  color-scheme: only light;
+}
+
 html {
   font-size: calc(14px + 0.390625vw);
   scroll-behavior: smooth;
@@ -15,7 +19,6 @@ body {
   font-family: 'FSLucasPro';
   font-weight: 500;
   color: a.$gray;
-  mix-blend-mode: difference;
 }
 
 h1, h2 {

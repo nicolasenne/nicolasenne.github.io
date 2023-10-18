@@ -4,18 +4,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 10vh;
 
   p {
     font-size: .8rem;
-  }
-
-  p::before {
-    display: block;
-    content: '';
-    width: 50%;
-    margin: 1rem auto 2rem;
-    height: 2px;
-    background: a.$gray;
+    margin-top: 1.5rem;
+    color: a.$black;
   }
 }

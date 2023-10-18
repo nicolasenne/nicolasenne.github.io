@@ -960,18 +960,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 10vh;
 }
 footer p {
   font-size: 0.8rem;
-}
-footer p::before {
-  display: block;
-  content: "";
-  width: 50%;
-  margin: 1rem auto 2rem;
-  height: 2px;
-  background: #808080;
+  margin-top: 1.5rem;
+  color: #000;
 }
 
 main {

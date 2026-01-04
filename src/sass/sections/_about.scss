@@ -1,8 +1,8 @@
 @use '../abstracts/colors' as a;
 
 .about-bg {
-  background: linear-gradient(#fff 55%, 0, #000 45%);
-  min-height: 100dvh;
+  background: linear-gradient(#fff 60%, 0, #000 40%);
+  min-height: 110dvh;
 }
 
 .about {
@@ -11,7 +11,7 @@
   grid-template-columns: auto auto;
   gap: 3vh 4vw;
   color: a.$black;
-  padding-top: 5vh;
+  padding-top: 15dvh;
   // text-wrap: balance;
 
   > div {

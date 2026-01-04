@@ -14,14 +14,12 @@
 
 window.SimpleAnime = class {
   constructor() {
-    // anima imediatamente (load)
     this.instantItems = document.querySelectorAll(
       "nav [data-anime], .social [data-anime], #main [data-anime]"
     );
 
-    // anima no scroll
     this.sections = document.querySelectorAll(
-      "#about, #work, #game, #contact"
+      "#about, #work, #game-title, #game, #contact"
     );
 
     this.init();
@@ -42,15 +40,17 @@ window.SimpleAnime = class {
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
+          const items = entry.target.querySelectorAll("[data-anime]");
+
           if (entry.isIntersecting) {
-            const items = entry.target.querySelectorAll("[data-anime]");
             this.animateItems(items);
-            observer.unobserve(entry.target);
+          } else {
+            items.forEach(el => el.classList.remove("anime"));
           }
         });
       },
       {
-        threshold: 0.25
+        threshold: 0.1
       }
     );
 
@@ -58,10 +58,7 @@ window.SimpleAnime = class {
   }
 
   init() {
-    // anima menu, social e main
     this.animateItems(this.instantItems);
-
-    // anima resto no scroll
     this.observeSections();
   }
 };

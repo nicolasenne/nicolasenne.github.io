@@ -20,7 +20,7 @@
     height: 100%;
     object-fit: cover;
     box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
-    border-radius: 12px;
+    border-radius: 8px;
     filter: grayscale(100%);
     transition: ease-in-out .3s;
 
@@ -42,7 +42,7 @@
 }
 
 .work-title {
-  padding: 15vh 0 5vh;
+  padding: 7vh 0 5vh;
 }
 
 @media (max-width: 960px) {

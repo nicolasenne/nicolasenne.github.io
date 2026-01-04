@@ -15,14 +15,13 @@
   transform: translate3d(-20px, 0, 0);
 }
 
-/* 7 Adicione o CSS Essencial abaixo */
 [data-anime] {
   opacity: 0;
 }
 
 .anime {
   opacity: 1;
-  transform: none;
+  transform: translateY(0);
   transition: transform 0.8s, opacity 0.8s;
 }
 
@@ -685,6 +684,7 @@ a {
 
 .about-bg {
   background: linear-gradient(#fff 60%, 0, #000 40%);
+  min-height: 100dvh;
 }
 
 .about {
@@ -733,7 +733,7 @@ a {
   gap: 1rem;
 }
 .about .about-img {
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   object-fit: cover;
 }
@@ -984,6 +984,30 @@ footer p {
 
 .snake-title {
   padding: 0 0 5vh;
+  display: flex;
+  gap: 0.2rem;
+}
+.snake-title .scroll-indicator {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+}
+.snake-title .scroll-indicator i {
+  animation: scrollHint 1.8s ease-in-out infinite;
+}
+@keyframes scrollHint {
+  0% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+.snake-title i {
+  font-size: 1.5rem;
 }
 
 .snake {
@@ -1017,23 +1041,18 @@ footer p {
 }
 main {
   color: #fff;
-  padding: 16vh 0 5vh;
+  padding: 10vh 0 5vh;
 }
 
 .banner {
-  background-color: #000;
+  background: linear-gradient(to bottom, #fff 0%, #fff 15%, #000 15%, #000 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  height: 75vh;
+  height: 80dvh;
   padding: 0 180px 0 7vw;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   font-weight: 700;
-}
-.banner img {
-  height: 125%;
-  margin-bottom: 19vh;
+  overflow: hidden;
 }
 
 .banner-info {
@@ -1041,6 +1060,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: 5rem;
 }
 .banner-info h1 {
   color: #fff;
@@ -1061,6 +1081,12 @@ main {
 .banner-info a {
   color: #fff;
   font-size: 1rem;
+}
+
+.banner-image {
+  height: 110%;
+  will-change: transform;
+  margin-top: 2rem;
 }
 
 .social-banner {
@@ -1151,7 +1177,7 @@ main {
   height: 100%;
   object-fit: cover;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
+  border-radius: 8px;
   filter: grayscale(100%);
   transition: ease-in-out 0.3s;
 }
@@ -1170,7 +1196,7 @@ main {
 }
 
 .work-title {
-  padding: 15vh 0 5vh;
+  padding: 7vh 0 5vh;
 }
 
 @media (max-width: 960px) {

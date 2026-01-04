@@ -2,6 +2,7 @@
 
 .about-bg {
   background: linear-gradient(#fff 60%, 0, #000 40%);
+  min-height: 100dvh;
 }
 
 .about {
@@ -26,7 +27,7 @@
   .item6 { grid-area: 5 / 2 / span 1 / span 2; display:flex; gap: 1rem; }
 
   .about-img {
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
     object-fit: cover;
   }

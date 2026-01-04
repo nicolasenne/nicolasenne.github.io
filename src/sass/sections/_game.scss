@@ -1,7 +1,14 @@
 @use '../abstracts/colors' as a;
 
-.snake-title {
+.game-title {
   padding: 0 0 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  text-wrap: balance;
+}
+
+.snake-title {
   display: flex;
   gap: .2rem;
 

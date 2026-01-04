@@ -31,7 +31,7 @@
     <meta property="twitter:title" content="Nicolas Enne | Front-end Developer, Designer & Teacher" />
     <meta property="twitter:description" content="Nicolas Enne - Front-end developer, designer, teacher, advertiser, musician, traveler and Pokémon™ trainer." />
     <meta property="twitter:image" content="assets/images/meta-img.webp" />
-    <link rel="icon" type="image/x-icon" href="assets/images/pikachu.svg">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -42,7 +42,8 @@
         <ul class="links">
           <li data-anime="1200" class="fadeInDown"><a href="#about">About</a></li>
           <li data-anime="1500" class="fadeInDown"><a href="#work">Work</a></li>
-          <li data-anime="1800" class="fadeInDown"><a href="#contact">Contact</a></li>
+          <li data-anime="1800" class="fadeInDown"><a href="#game">Bored?</a></li>
+          <li data-anime="2100" class="fadeInDown"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -60,7 +61,7 @@
               <p data-anime="300" class="fadeInLeft">Hello, my name is</p>
               <h1 data-anime="600" class="fadeInLeft">Nicolas Enne.</h1>
               <h2 data-anime="900" class="fadeInLeft">I code & design things for the web.</h2>
-              <h3 data-anime="1200" class="fadeInLeft">Front-end developer, designer, teacher, advertiser, musician, traveler and Pokémon™ trainer.</h3>
+              <h3 data-anime="1200" class="fadeInLeft">Full stack developer, designer, teacher, advertiser, musician, traveler and Pokémon™ trainer.</h3>
               <a data-anime="1500" class="fadeInLeft btn-main" href="#contact">Contact Me<i class="bi bi-arrow-right-short"></i></a>
               <ul class="social-banner">
                 <li data-anime="1200" class="fadeInDown"><a href="https://github.com/nicolasenne" target="_blank"><i class="bi bi-github social-icon"></i></a></li>
@@ -97,7 +98,7 @@
             <i class="bi bi-chat-dots"></i>
             <div>
               <h4>Passionate about teaching</h4>
-              <p>Currently working as a web development teacher at <a href="https://www.lewagon.com/" target="_blank"><strong>Le Wagon</strong></a> coding bootcamp, in São Paulo, Brazil.</p>
+              <p>Currently working as a web developer at <a href="https://www.hyland.com/en" target="_blank"><strong>Hyland Software</strong></a> and as an AI software development teacher at <a href="https://www.lewagon.com/" target="_blank"><strong>Le Wagon</strong></a> coding bootcamp.</p>
             </div>
           </div>
           <img class="signature item6" src="assets/images/signature.svg" alt="Nicolas Enne signature">
@@ -128,9 +129,33 @@
             <a href="https://github.com/nicolasenne/sol-pay" target="_blank">View on Github</a>
           </div>
         </section>
+      </div>
+    </div>
+
+    <div class="bg">
+      <div class="container">
+        <h2 class="snake-title">Or if you're bored</h2>
+      </div>
+    </div>
+
+    <div class="snake" id="game">
+      <canvas
+        id="snake-canvas"
+        width="400"
+        height="400"
+        tabindex="0"
+        aria-label="Snake game canvas. Use arrow keys to play."
+      >
+      </canvas>
+
+    </div>
+
+    <div class="bg">
+      <div class="container">
         <img class="pikachu" src="assets/images/pikachu.svg" alt="pikachu silhouette">
       </div>
     </div>
+
     <!-- Contact -->
     <section class="contact bg-black" id="contact">
       <div class="container">
@@ -172,7 +197,8 @@
     </footer>
     <!-- JavaScript -->
     <!-- <script src="js/cursor.js"></script> -->
-    <script src="./js/simple-anime.js"></script>;
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/snake.js"></script>
     <script src="js/sent.js"></script>
   </body>
 </html>

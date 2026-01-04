@@ -31,12 +31,14 @@
   src: url("../assets/fonts/FSLucasPro-Bold.ttf");
   font-style: bold;
   font-weight: 700;
+  font-display: swap;
 }
 @font-face {
   font-family: "FSLucasPro";
   src: url("../assets/fonts/FSLucasPro-Med.ttf");
   font-style: medium;
   font-weight: 500;
+  font-display: swap;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -744,21 +746,30 @@ a {
 }
 .about strong {
   position: relative;
-  transition: 0.2s;
+  color: #808080;
+  transition: color 0.2s ease;
 }
 .about strong::after {
-  display: block;
   content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
   width: 100%;
   height: 1px;
   background: #fff;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
 }
 .about strong:hover {
-  color: #808080;
-  transition: 0.2s;
+  color: #fff;
+}
+.about strong:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.about strong:not(:hover)::after {
+  transform-origin: right;
 }
 .about .signature {
   padding-bottom: 24px;
@@ -967,10 +978,43 @@ footer {
 }
 footer p {
   font-size: 0.8rem;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   color: #000;
 }
 
+.snake-title {
+  padding: 0 0 5vh;
+}
+
+.snake {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+
+#snake-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+  touch-action: none;
+}
+
+.pikachu {
+  width: 72px;
+  padding-top: 2rem;
+}
+
+@media (max-width: 960px) {
+  .pikachu {
+    margin: 2rem auto 0;
+  }
+}
+@media (max-width: 576px) {
+  .pikachu {
+    margin: 2rem auto 0;
+  }
+}
 main {
   color: #fff;
   padding: 16vh 0 5vh;
@@ -981,7 +1025,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 24px;
+  border-radius: 12px;
   height: 75vh;
   padding: 0 180px 0 7vw;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -1126,11 +1170,7 @@ main {
 }
 
 .work-title {
-  padding: 15vh 0 10vh;
-}
-
-.pikachu {
-  width: 72px;
+  padding: 15vh 0 5vh;
 }
 
 @media (max-width: 960px) {
@@ -1168,7 +1208,7 @@ main {
     font-size: 1.2rem;
   }
   .pikachu {
-    margin: auto;
+    margin: 2rem auto 0;
   }
 }
 @media (max-width: 576px) {
@@ -1204,6 +1244,6 @@ main {
     font-size: 1.2rem;
   }
   .pikachu {
-    margin: auto;
+    margin: 2rem auto 0;
   }
 }

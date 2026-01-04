@@ -42,11 +42,7 @@
 }
 
 .work-title {
-  padding: 15vh 0 10vh;
-}
-
-.pikachu {
-  width: 72px;
+  padding: 15vh 0 5vh;
 }
 
 @media (max-width: 960px) {
@@ -76,7 +72,7 @@
   }
 
   .pikachu {
-    margin: auto;
+    margin: 2rem auto 0;
   }
 }
 
@@ -106,6 +102,6 @@
   }
 
   .pikachu {
-    margin: auto;
+    margin: 2rem auto 0;
   }
 }

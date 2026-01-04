@@ -1,0 +1,37 @@
+@use '../abstracts/colors' as a;
+
+.snake-title {
+  padding: 0 0 5vh;
+}
+
+.snake {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+
+#snake-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+  touch-action: none;
+}
+
+.pikachu {
+  width: 72px;
+  padding-top: 2rem;
+}
+
+@media (max-width: 960px) {
+  .pikachu {
+    margin: 2rem auto 0;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .pikachu {
+    margin: 2rem auto 0;
+  }
+}

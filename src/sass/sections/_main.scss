@@ -2,24 +2,25 @@
 
 main {
   color: a.$white;
-  padding: 16vh 0 5vh;
+  padding: 5dvh 0;
 }
 
 .banner {
-  background-color: a.$black;
+  background: linear-gradient(
+  to bottom,
+  a.$white 0%,
+  a.$white 15%,
+  a.$black 15%,
+  a.$black 100%
+);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 24px;
-  height: 75vh;
+  height: 80dvh;
   padding: 0 180px 0 7vw;
-  box-shadow: 5px 5px 10px rgba(a.$black, $alpha: .3);
   font-weight: 700;
+  overflow: hidden;
 
-  img {
-    height: 125%;
-    margin-bottom: 19vh;
-  }
 }
 
 .banner-info {
@@ -27,31 +28,38 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
-
+  margin-top: 5rem;
+  
   h1 {
     color: a.$white;
     font-size: 48px;
   }
-
+  
   h2 {
     color: a.$gray;
     font-size: 48px;
   }
-
+  
   h3 {
     font-size: 1rem;
     font-weight: 500;
   }
-
+  
   p {
     font-size: 1rem;
     text-wrap: balance;
   }
-
+  
   a {
     color: a.$white;
     font-size: 1rem;
   }
+}
+
+.banner-image {
+  height: 110%;
+  will-change: transform;
+  margin-top: 2rem;
 }
 
 .social-banner {

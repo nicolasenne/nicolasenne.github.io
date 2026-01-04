@@ -6,3 +6,9 @@
 </h1>
 
 <img width="1440" alt="portfolio-img" src="https://github.com/nicolasenne/nicolasenne.github.io/assets/40183143/ffd3614d-26df-4142-91d0-2fe8e04bb64d">
+
+## Project structure
+
+- `src/` contains source files (Sass, JS)
+- `css/`, `js/`, `assets/` are compiled outputs used in production
+- No build step is required to run the deployed site

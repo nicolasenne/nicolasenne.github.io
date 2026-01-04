@@ -1,0 +1,72 @@
+@use '../abstracts/colors' as a;
+
+.game-title {
+  padding: 0 0 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  text-wrap: balance;
+}
+
+.snake-title {
+  display: flex;
+  gap: .2rem;
+
+  .scroll-indicator {
+    display: inline-flex;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .scroll-indicator i {
+    animation: scrollHint 1.8s ease-in-out infinite;
+  }
+
+  @keyframes scrollHint {
+    0% {
+      transform: translateY(2px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(2px);
+    }
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+.snake {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+
+#snake-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  outline: none;
+  touch-action: none;
+}
+
+.pikachu {
+  width: 72px;
+  padding-top: 2rem;
+}
+
+@media (max-width: 960px) {
+  .pikachu {
+    margin: 2rem auto 0;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .pikachu {
+    margin: 2rem auto 0;
+  }
+}

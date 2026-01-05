@@ -11,11 +11,11 @@ function lerp(a, b, n) {
 }
 
 function animate() {
-  imgY  = lerp(imgY, targetY, 0.16);
+  imgY  = lerp(imgY, targetY, 0.12);
 
   textY = lerp(textY, targetY, 0.08);
 
-  image.style.transform = `translateY(${imgY * -0.4}px)`;
+  image.style.transform = `translateY(${imgY * 0.2}px)`;
   text.style.transform  = `translateY(${textY * -0.7}px)`;
 
   requestAnimationFrame(animate);

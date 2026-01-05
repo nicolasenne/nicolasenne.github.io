@@ -121,7 +121,6 @@ class SnakeGame {
       const absX = Math.abs(dx);
       const absY = Math.abs(dy);
 
-      // tap (start / restart)
       if (absX < 20 && absY < 20) {
         if (!this.running || this.gameOver) {
           this.reset();
@@ -139,7 +138,6 @@ class SnakeGame {
   }
 
   handleKey(e) {
-    // SPACE
     if (e.code === "Space") {
       e.preventDefault();
 
@@ -229,11 +227,9 @@ class SnakeGame {
 
     const snakeHead = this.snake[0];
 
-    // garante lado preto
     const blackSideStartCol =
       Math.floor(cols * 0.7);
 
-    // garante que esteja à frente da snake
     const minCol =
       Math.floor(snakeHead.x / this.cellSize) + 3;
 
@@ -289,29 +285,22 @@ class SnakeGame {
   }
 
   draw() {
-    // limpa tudo
     this.ctx.clearRect(0, 0, this.canvasSizeX, this.canvasSizeY);
 
     const half = this.canvasSizeX / 2;
 
-    // fundo normal
     this.ctx.globalCompositeOperation = "source-over";
 
-    // lado branco
     this.ctx.fillStyle = "#ffffff";
     this.ctx.fillRect(0, 0, half, this.canvasSizeY);
 
-    // lado preto
     this.ctx.fillStyle = "#000000";
     this.ctx.fillRect(half, 0, half, this.canvasSizeY);
 
-    // ativa diferença
     this.ctx.globalCompositeOperation = "difference";
 
-    // 🔹 DESENHA O SCORE PRIMEIRO
     this.drawScore();
 
-    // snake
     this.ctx.fillStyle = "#ffffff";
     this.snake.forEach((s) =>
       this.ctx.fillRect(s.x, s.y, this.cellSize, this.cellSize)
@@ -328,7 +317,6 @@ class SnakeGame {
     this.ctx.fillStyle = "#ffffff";
     this.drawFood();
 
-    // texto
     if (!this.running && !this.gameOver) {
       this.drawCenteredText("Press SPACE to start");
     }
@@ -337,7 +325,6 @@ class SnakeGame {
       this.drawCenteredText("Game Over - Press SPACE to restart");
     }
 
-    // reseta modo (boa prática)
     this.ctx.globalCompositeOperation = "source-over";
   }
 
@@ -369,6 +356,5 @@ class SnakeGame {
   }
 }
 
-// init
 const canvas = document.getElementById("snake-canvas");
 const game = new SnakeGame(canvas);

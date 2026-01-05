@@ -86,10 +86,6 @@ main {
     padding: 25vh 5vw;
     text-wrap: balance;
 
-    img {
-      display: none;
-    }
-
     .banner-info {
       
       h1, h2 {
@@ -101,22 +97,23 @@ main {
       }
     }
   }
+
+  .banner-image {
+    height: 50vh;
+    margin-top: 8rem;
+  }
 }
 
 @media (max-width: 576px) {
     main {
-      padding: 5% 0 15vh;
+      padding: 5% 0 5vh;
     }
 
     .banner {
       flex-direction: column;
       height: 100%;
       text-align: center;
-      padding: 25vh 5vw;
-
-      img {
-        display: none;
-      }
+      padding: 15vh 5vw;
 
       .banner-info {
         
@@ -129,6 +126,11 @@ main {
         }
       }
     }
+
+  .banner-image {
+    height: 50vh;
+    margin-top: 8rem;
+  }
 
     .social-banner {
       display: flex;

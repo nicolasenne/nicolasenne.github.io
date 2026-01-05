@@ -783,10 +783,8 @@ a {
 .about .item5 {
   grid-area: 4/2/span 1/span 2;
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-}
-.about .item5 h4, .about .item5 i, .about .item5 p, .about .item5 a {
-  color: #fff;
 }
 .about .item6 {
   grid-area: 5/2/span 1/span 2;
@@ -1215,34 +1213,36 @@ main {
     padding: 25vh 5vw;
     text-wrap: balance;
   }
-  .banner img {
-    display: none;
-  }
   .banner .banner-info h1, .banner .banner-info h2 {
     font-size: 3rem;
   }
   .banner .banner-info a {
     margin: auto;
   }
+  .banner-image {
+    height: 50vh;
+    margin-top: 8rem;
+  }
 }
 @media (max-width: 576px) {
   main {
-    padding: 5% 0 15vh;
+    padding: 5% 0 5vh;
   }
   .banner {
     flex-direction: column;
     height: 100%;
     text-align: center;
-    padding: 25vh 5vw;
-  }
-  .banner img {
-    display: none;
+    padding: 15vh 5vw;
   }
   .banner .banner-info h2 {
     font-size: 2.5rem;
   }
   .banner .banner-info a {
     margin: auto;
+  }
+  .banner-image {
+    height: 50vh;
+    margin-top: 8rem;
   }
   .social-banner {
     display: flex;

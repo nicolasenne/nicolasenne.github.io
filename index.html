@@ -31,7 +31,8 @@
     <meta property="twitter:title" content="Nicolas Enne | Front-end Developer, Designer & Teacher" />
     <meta property="twitter:description" content="Nicolas Enne - Front-end developer, designer, teacher, advertiser, musician, traveler and Pokémon™ trainer." />
     <meta property="twitter:image" content="assets/images/meta-img.webp" />
-    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -46,7 +47,25 @@
           <li data-anime="2100" class="fadeInDown"><a href="#contact">Contact</a></li>
         </ul>
       </div>
+      <button data-anime="300" class="menu-toggle fadeInDown" aria-label="Open menu">
+        <i class="bi bi-list"></i>
+      </button>
     </nav>
+    <div class="mobile-menu">
+      <ul class="mobile-links">
+        <li><a href="#main">Intro</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#game">Bored?</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <ul class="mobile-social">
+        <li><a href="https://github.com/nicolasenne" target="_blank"><i class="bi bi-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/nicolasenne/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+        <li><a href="https://www.instagram.com/nicolasenne" target="_blank"><i class="bi bi-instagram"></i></a></li>
+      </ul>
+    </div>
     <ul class="social">
       <li data-anime="1200" class="fadeInDown"><a href="https://github.com/nicolasenne" target="_blank"><i class="bi bi-github social-icon"></i></a></li>
       <li data-anime="1500" class="fadeInDown"><a href="https://www.linkedin.com/in/nicolasenne/" target="_blank"><i class="bi bi-linkedin social-icon"></i></a></li>
@@ -78,7 +97,7 @@
     <div class="about-bg" id="about">
       <div class="container">
         <section class="about">
-          <h2 data-anime="300" class="item1 fadeInDown">Who I Am</h2>
+          <h2 data-anime="300" class="item1 fadeInDown">Who I am</h2>
           <img data-anime="100" class="about-img item2 fadeInLeft" src="assets/images/about.webp" alt="Nicolas Enne photo" loading="lazy">
           <div class="item3 about-text">
             <p data-anime="500" class="fadeInLeft">
@@ -151,8 +170,8 @@
     <div class="bg" id="work">
       <div class="container">
         <div class="work-title">
-          <h2 data-anime="100" class="fadeInDown">What I've Done</h2>
-          <p data-anime="200" class="fadeInLeft">Selected projects focusing on UI, interaction and real-world problems.</p>
+          <h2 data-anime="100" class="fadeInDown">What I've done</h2>
+          <p data-anime="200" class="fadeInLeft">Selected projects focusing on UI, interaction and problem-solving.</p>
         </div>
         <section class="work">
           <a data-anime="300" class="item1 fadeInLeft" href="https://github.com/nicolasenne/plants-vs-zombies" target="_blank"><img src="assets/images/work-1.webp" alt="Find Your Plants image"></a>
@@ -210,8 +229,8 @@
       <div class="container">
         <form class="form" id="my-form" action="https://formspree.io/f/xleyakzz" method="POST">
           <div class="form-info">
-            <h2 data-anime="100" class="fadeInDown">Send Me A Line</h2>
-            <p data-anime="300" class="fadeInDown">I'm always interested in hearing about creative cases and participating in new projects. Have an idea you want to make it come true or simply want to say hi? Just send me a line!</p>
+            <h2 data-anime="100" class="fadeInDown">Send me a line</h2>
+            <p data-anime="300" class="fadeInDown">  I'm always interested in hearing about creative ideas and collaborating on new projects. Whether you have something in mind or just want to say hi, feel free to reach out.</p>
           </div>
           <div class="field-flex">
             <div class="field">
@@ -247,6 +266,7 @@
     <!-- JavaScript -->
     <!-- <script src="js/cursor.js"></script> -->
     <script src="./js/links.js" defer></script>
+    <script src="./js/nav.js" defer></script>
     <script src="./js/parallax.js" defer></script>
     <script src="./js/sent.js" defer></script>
     <script src="./js/signature.js" defer></script>

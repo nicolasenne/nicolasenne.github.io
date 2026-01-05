@@ -6,7 +6,7 @@ nav {
   width: 100%;
   color: a.$white;
   mix-blend-mode: difference;
-  z-index: 1;
+  z-index: 3;
 
   .menu {
     display: flex;
@@ -64,12 +64,82 @@ nav {
   }
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  color: a.$white;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: a.$white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 3rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+  z-index: 2;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mobile-social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.mobile-links,
+.mobile-social {
+  a {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 576px) {
   nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+  }
+
+  nav .links {
     display: none;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 
   .social {
     display: none;
   }
 }
+
+// @media (max-width: 576px) {
+//   nav {
+//     display: none;
+//   }
+
+//   .social {
+//     display: none;
+//   }
+// }

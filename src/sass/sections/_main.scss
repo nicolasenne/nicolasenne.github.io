@@ -6,21 +6,19 @@ main {
 }
 
 .banner {
-  background: linear-gradient(
-  to bottom,
-  a.$white 0%,
-  a.$white 15%,
-  a.$black 15%,
-  a.$black 100%
-);
+//   background: linear-gradient(
+//   to bottom,
+//   a.$white 0%,
+//   a.$white 15%,
+//   a.$black 15%,
+//   a.$black 100%
+// );
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80dvh;
   padding: 0 180px 0 7vw;
   font-weight: 700;
-  overflow: hidden;
-  border-radius: 12px;
 }
 
 .banner-info {
@@ -31,8 +29,8 @@ main {
   margin-top: 5rem;
   
   h1 {
-    color: a.$white;
-    font-size: 48px;
+    color: a.$black;
+    font-size: 56px;
   }
   
   h2 {
@@ -43,6 +41,7 @@ main {
   h3 {
     font-size: 1rem;
     font-weight: 500;
+    text-wrap: balance;
   }
   
   p {
@@ -51,15 +50,14 @@ main {
   }
   
   a {
-    color: a.$white;
     font-size: 1rem;
   }
 }
 
 .banner-image {
-  height: 110%;
+  height: 100%;
   will-change: transform;
-  margin-top: 2rem;
+  margin-top: 9rem;
 }
 
 .social-banner {

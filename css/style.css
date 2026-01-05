@@ -416,15 +416,16 @@ ul, li {
 }
 
 .btn-main {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  background: none;
-  border: none;
-  padding: 12px 0;
-  position: relative;
+  gap: 4px;
   width: 188px;
+  padding: 12px 0;
+  color: #000;
+  isolation: isolate;
+  background: #fff;
 }
 .btn-main:before {
   content: "";
@@ -433,10 +434,10 @@ ul, li {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background: #fff;
-  mix-blend-mode: difference;
+  background: #000;
   transform: translateY(-50%) translateX(100%);
   transition: 0.7s;
+  z-index: 0;
 }
 .btn-main:hover::before {
   transform: translateY(-50%) translateX(0);
@@ -453,6 +454,14 @@ ul, li {
 }
 .btn-main:hover i {
   transform: translateX(8px);
+}
+
+.btn-main .label,
+.btn-main i {
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
+  color: #fff;
 }
 
 .btn-send {
@@ -1140,15 +1149,12 @@ main {
 }
 
 .banner {
-  background: linear-gradient(to bottom, #fff 0%, #fff 15%, #000 15%, #000 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80dvh;
   padding: 0 180px 0 7vw;
   font-weight: 700;
-  overflow: hidden;
-  border-radius: 12px;
 }
 
 .banner-info {
@@ -1159,8 +1165,8 @@ main {
   margin-top: 5rem;
 }
 .banner-info h1 {
-  color: #fff;
-  font-size: 48px;
+  color: #000;
+  font-size: 56px;
 }
 .banner-info h2 {
   color: #808080;
@@ -1169,20 +1175,20 @@ main {
 .banner-info h3 {
   font-size: 1rem;
   font-weight: 500;
+  text-wrap: balance;
 }
 .banner-info p {
   font-size: 1rem;
   text-wrap: balance;
 }
 .banner-info a {
-  color: #fff;
   font-size: 1rem;
 }
 
 .banner-image {
-  height: 110%;
+  height: 100%;
   will-change: transform;
-  margin-top: 2rem;
+  margin-top: 9rem;
 }
 
 .social-banner {

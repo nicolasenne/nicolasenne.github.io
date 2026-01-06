@@ -1,14 +1,10 @@
-<div align="center">
-  <img width="80" src="https://github.com/nicolasenne/nicolasenne.github.io/assets/40183143/e5a87f74-080c-46ab-9bdc-3cfe55ee0775">
-</div>
-<h1 align="center">
-  nicolasenne.github.io
-</h1>
+# Personal Portfolio
 
-<img width="1440" alt="portfolio-img" src="https://github.com/nicolasenne/nicolasenne.github.io/assets/40183143/ffd3614d-26df-4142-91d0-2fe8e04bb64d">
+![Hero screenshot](assets/images/hero.webp)
 
-## Project structure
+This repository contains the source code for my personal portfolio website.
 
-- `src/` contains source files (Sass, JS)
-- `css/`, `js/`, `assets/` are compiled outputs used in production
-- No build step is required to run the deployed site
+It’s a lightweight, static site focused on clarity, visual hierarchy and subtle interactions, built to showcase selected projects, background and skills.
+
+Live version:  
+👉 https://nicolasenne.github.io
